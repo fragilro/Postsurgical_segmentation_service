@@ -1,0 +1,31 @@
+{
+    "name": "Postsurgical segmentation",
+    "version": "0.1.0",
+    "keywords": [
+      "segmentation",
+      "multichannel",
+      "postsurgical"
+    ],
+    "shortdesc": "DSS service (Postsurgical multichannel segmentation)",
+    "longdesc": "Segmentation of cases after tumor removal surgery. It should be noted that this service does not include image preprocessing. If the images have not been preprocessed, select the preprocessing service first.",
+    "tags": [
+      {
+        "name": "T1C",
+        "type": "MainImage",
+        "hint": "T1C MRI image",
+        "required": true
+      },
+      {
+        "name": "T2",
+        "type": "OverlayImage",
+        "hint": "T2 MRI image",
+        "required": true
+      },
+      {
+        "name": "Flair",
+        "type": "OverlayImage",
+        "hint": "Flair MRI image",
+        "required": true
+      }
+    ]
+  }
